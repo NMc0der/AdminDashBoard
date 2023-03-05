@@ -1,0 +1,276 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: Roboto;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+
+
+
+.header {
+    padding: 15px;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    background-color: whitesmoke;
+    box-shadow: 0px 3px 5px lightgray;
+    position: relative;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.searchIcon {
+    justify-self: end;
+}
+
+#searchBar {
+    border-radius: 1rem;
+    background-color: #e2e8f0;
+    border: none;
+}
+
+
+.user {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    justify-items: end;
+    gap: 10px;
+}
+
+.profilePic {
+    border-radius: 50%;
+    max-width: 40px;
+    min-height: 40px;
+    justify-self: center;
+
+}
+
+.userName {
+    justify-self: start;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    /* align-content: center; */
+}
+
+.profilePic2 {
+    border-radius: 50%;
+    max-width: 60px;
+    min-height: 60px;
+    grid-row: 1/3;
+    justify-self: end;
+    background-image: url("https://assets-global.website-files.com/5e6a544cadf84b1393e2e022/620f6def1b1bf7732dd7937f_catdrawing%2012.jpg");
+}
+
+.greet {
+    align-self: end;
+}
+
+.userName2 {
+    grid-row: 2/3;
+    align-self: start;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+.buttons>button {
+
+    height: 30px;
+    background-color: #0ea5e9;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+}
+
+
+
+.sideBar {
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 5fr;
+    color: white;
+    background-color: #0ea5e9;
+    grid-row: 1/3;
+}
+
+.dashBoard {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+    gap: 3px;
+}
+
+
+.nav1 {
+    display: grid;
+    gap: 20px;
+    align-content: start;
+
+}
+
+.nav2 {
+    display: grid;
+    align-content: start;
+    gap: 20px;
+}
+
+.nav>div {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    /* justify-items: start; */
+    align-items: end;
+    gap: 3px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 10fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px;
+    background-color: #e2e8f0;
+    gap: 20px;
+}
+
+.mainTitle {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.projects {
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 1fr 11fr;
+}
+
+.cards {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+.card {
+    border-radius: 1rem;
+
+    padding: 20px;
+    border-left: 7px solid orange;
+    display: grid;
+    background-color: white;
+}
+
+.cardIcons {
+    justify-self: end;
+    align-self: end;
+
+}
+
+
+.cardIcons>span {
+    margin: 4px;
+}
+
+p {
+    margin: 0;
+}
+
+
+.announcements {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+
+}
+
+.announceCard {
+    display: grid;
+    padding: 15px;
+    background-color: white;
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: minmax(auto, 1fr);
+    border-radius: 1rem;
+}
+
+.cutoff-text {
+    --max-lines: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines)
+}
+
+
+.trending {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.trendingCard {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 15px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.trend {
+    display: grid;
+    /* justify-items: center; */
+    grid-template-columns: repeat(5, 1fr);
+
+    font-size: 13px;
+    gap: 2px;
+}
+
+.tag {
+    grid-column: 2/6;
+    align-self: end;
+}
+
+.trendName {
+    grid-column: 2/ 6;
+}
+
+.pic {
+    background-color: #0ea5e9;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    border-radius: 50%;
+    max-width: 35px;
+    min-height: 35px;
+    grid-row: 1/3;
+}
